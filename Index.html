@@ -1,0 +1,49 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   1Win Betting App
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <div class="relative min-h-screen flex items-center justify-center">
+   <img alt="Background image of a sports stadium with cheering crowd" class="absolute inset-0 w-full h-full object-cover opacity-50" height="1080" src="https://storage.googleapis.com/a1aa/image/JbpHXXsest_AQ2BBg3YbXeI9iYK-PJ4g80Ia5-wKDdY.jpg" width="1920"/>
+   <div class="relative z-10 text-center p-6 bg-black bg-opacity-50 rounded-lg">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+     Welcome to 1Win India
+    </h1>
+     <H2 class="text-2xl md:text-3xl font-bold mb-4">India's No. 1 Betting App</H2>
+    <p class="text-lg md:text-2xl mb-6">
+     Bet on your favorite sports and win big!
+    </p>
+    <div class="text-xl md:text-2xl font-bold mb-4" id="timer">
+    </div>
+    <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-lg md:text-xl" href="https://t.me/+mvnu6s9AfYZhZWQy">
+     Get Started
+    </a>
+   </div>
+  </div>
+  <script>
+   let timer = 3;
+        const timerElement = document.getElementById('timer');
+        const countdown = setInterval(() => {
+            timerElement.textContent = `Redirecting in ${timer}...`;
+            timer--;
+            if (timer < 0) {
+                clearInterval(countdown);
+                window.location.href = 'https://t.me/+mvnu6s9AfYZhZWQy';
+            }
+        }, 1000);
+  </script>
+ </body>
+</html>
